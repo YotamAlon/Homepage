@@ -1,16 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic);
-html {
-  height: 100%;
-}
+
 body {
   background: #417CB6;
-  height: 100%;
 }
 
 .row {
   margin-left: 0;
   margin-right: 0;
-  height: 100%;
 }
 .page-header {
   color: #FFF;
@@ -25,14 +21,12 @@ body {
   padding: 5px;
   margin-left: 10px;
   margin-right: 10px;
-  height: 100%;
 }
 
 #content-container {
   background: #FFF;
   margin-left: 250px;
   padding: 10px;
-  height: 100%;
 }
 
 #content {
