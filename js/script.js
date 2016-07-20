@@ -9,6 +9,6 @@ var insertHtml = function(data) {
 
 var loadHtml = function (name) {
     showLoader();
-    $.get(name, insertHtml());
-    console.log($.get(name, insertHtml()));
+    $.get(name, insertHtml(data));
+    console.log($.get(name, insertHtml(data)));
 };
