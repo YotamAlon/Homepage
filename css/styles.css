@@ -22,8 +22,6 @@ body {
   margin-left: 10px;
   margin-right: 10px;
   text-align: center;
-  color: white;
-  border-color: white;
 }
 
 #content-container {
@@ -48,6 +46,8 @@ li {
   padding-top: 5px;
   padding-bottom: 5px;
   border: solid;
+  border-color: white;
+  color: white;
 }
 
 @media print, screen and (max-width: 960px) {
