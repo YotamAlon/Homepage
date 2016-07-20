@@ -2,7 +2,7 @@ var showLoader = function () {
     document.querySelector("#content").innerHTML = "<div class='text-center'><img src='images/ajax-loader.gif'></div>";
 };
 
-var insertHtml(html) {
+var insertHtml = function(html) {
     document.querySelector("#content").innerHTML = html;
 };
 
