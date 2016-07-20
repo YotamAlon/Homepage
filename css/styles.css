@@ -50,6 +50,10 @@ li {
   color: white;
 }
 
+li:hover {
+  background: #006bb3;
+}
+
 @media print, screen and (max-width: 960px) {
 
   header, section, footer {
