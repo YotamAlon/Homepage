@@ -4,5 +4,6 @@ var showLoader = function () {
 
 var loadHtml = function (name) {
     showLoader();
-    document.querySelector("#content").innerHTML = $.get(name, loadHtml(data));
+    document.querySelector("#content").innerHTML = $.get(name, loadHtml(name));
+    console.log($.get(name, loadHtml(name)))
 }
