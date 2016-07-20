@@ -52,6 +52,7 @@ li {
 
 li:hover {
   background: #006bb3;
+  cursor: pointer;
 }
 
 @media print, screen and (max-width: 960px) {
