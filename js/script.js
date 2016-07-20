@@ -10,5 +10,5 @@ var insertHtml = function(data) {
 var loadHtml = function (name) {
     showLoader();
     $.get(name, insertHtml(data));
-    console.log($.get(name, insertHtml(data)));
+    console.log($.get(name, function(data) {alert("Data: "+data);}));
 };
