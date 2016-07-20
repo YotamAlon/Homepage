@@ -2,8 +2,11 @@ var showLoader = function () {
     document.querySelector("#content").innerHTML = "<div class='text-center'><img src='images/ajax-loader.gif'></div>"
 }
 
+var insertHtml(html) {
+    document.querySelector("#content").innerHTML = html
+}
 var loadHtml = function (name) {
     showLoader();
-    document.querySelector("#content").innerHTML = $.get(name, loadHtml(name));
-    console.log($.get(name, loadHtml(name)))
+    $.get(name, insertHtml(data));
+    console.log($.get(name, insertHtml(name)))
 }
