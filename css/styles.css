@@ -44,6 +44,7 @@ li {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
+  border: solid;
 }
 
 @media print, screen and (max-width: 960px) {
