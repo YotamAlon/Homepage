@@ -3,6 +3,7 @@ var showLoader = function () {
 };
 
 var insertHtml = function(data) {
+    console.log(data);
     document.querySelector("#content").innerHTML = data.responseText;
 };
 
