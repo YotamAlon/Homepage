@@ -4,7 +4,7 @@ var showLoader = function () {
 
 var insertHtml = function(data) {
     console.log(data);
-    document.querySelector("#content").innerHTML = data.responseText;
+    document.querySelector("#content").innerHTML = data;
 };
 
 var loadHtml = function (name) {
