@@ -72,11 +72,12 @@ header h1 {
   margin-right: 10px;
   padding: 10px;
   flex-grow: 1;
+  overflow-y: scroll;
+
 }
 
 #content {
   text-overflow: ellipsis;
-  overflow: scroll;
 }
 
 footer {
@@ -93,7 +94,7 @@ footer div {
   display: block;
 }
 
-li {
+#navbar li {
   width: 100%;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -104,7 +105,7 @@ li {
   text-shadow: 1px 1px gray;
 }
 
-li:hover {
+#navbar li:hover {
   background: #006080;
   cursor: pointer;
 }
