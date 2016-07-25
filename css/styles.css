@@ -31,9 +31,6 @@ body {
 header {
   color: #FFF;
   text-align: center;
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-  border-bottom: 1px solid #eee;
   color: #ecf2f8;
 }
 
@@ -51,7 +48,6 @@ header h1 {
   width: 230px;
   margin-left: 10px;
   margin-right: 10px;
-  text-align: center;
 }
 
 #navbar {
@@ -61,6 +57,24 @@ header h1 {
   border-color: #004b66;
   list-style: none;
   margin: 0;
+  text-align: center;
+}
+
+#navbar li {
+  width: 100%;
+  color: #ecf2f8;
+  background: #007399;
+  text-shadow: 1px 1px gray;
+}
+
+#navbar li div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#navbar li div:hover {
+  background: #006080;
+  cursor: pointer;
 }
 
 #navbar > li + li {
@@ -71,13 +85,11 @@ header h1 {
   background: #ecf2f8;
   margin-right: 10px;
   padding: 10px;
-  flex-grow: 1;
   overflow-y: scroll;
-
+  width: 100%;
 }
 
 #content {
-  text-overflow: ellipsis;
 }
 
 footer {
@@ -85,30 +97,16 @@ footer {
   bottom: 0;
   width: 100%;
   height: 60px;
-  vertical-align: middle;
 }
 
 footer div {
-  margin-left: 250px;
-  vertical-align: middle;
-  display: block;
+  margin-left: 50px;
 }
 
-#navbar li {
-  width: 100%;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /*border: solid;
-  border-color: #ecf2f8;*/
-  color: #ecf2f8;
-  background: #007399;
-  text-shadow: 1px 1px gray;
+footer div span {
 }
 
-#navbar li:hover {
-  background: #006080;
-  cursor: pointer;
-}
+
 
 @media print, screen and (max-width: 960px) {
 
