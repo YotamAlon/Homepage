@@ -1,5 +1,5 @@
 var showLoader = function () {
-    document.querySelector("#content").innerHTML = "<div class='text-center'><img src='images/ajax-loader.gif'></div>";
+    document.querySelector("#content").innerHTML = "<div style='text-center'><img src='images/ajax-loader.gif'></div>";
 };
 
 var insertHtml = function(data) {
