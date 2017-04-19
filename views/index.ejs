@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>            
+            Yotam Alon's Site (Still In Construction)
+        </title>
+        <title text=initialData.title></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" media="screen">
+        
+    </head>
+    
+    <body>
+        
+        <header id="page-header">
+            
+          <h1>
+            Yotam Alon's Site (Still In Construction)
+          </h1>
+          
+        </header>
+        
+        <div id="main">
+            
+          <div id="sidebar-wrapper">
+              
+            <ul id="navbar">
+                
+              <li>
+                <div onclick=loadHtml("snippets/homepage.html")>Homepage</div>
+              </li>
+              <li>
+                <div onclick=loadHtml("snippets/resume.html")>Resume</div>
+              </li>
+              <li>
+                <div onclick=loadHtml("snippets/projects.html")>Projects</div>
+              </li>
+              <li>
+                <div onclick=loadHtml("snippets/resources.html")>Resources</div>
+              </li>
+              <li>
+                <div onclick=loadHtml("snippets/ideas.html")>Ideas</div>
+              </li>
+              
+            </ul>
+            
+          </div>
+          
+          <div id="content-container">
+            <div id="content"></div>
+          </div>
+          
+        </div>
+        
+        <footer>
+            
+            <div>
+                <span className="text-center">Hosted on <a href="https://http://c9.io//">C9 Cloud Services</a></span>
+            </div>
+            
+        </footer>
+        
+    </body>
+</html>
+
