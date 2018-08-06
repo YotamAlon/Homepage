@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+</head>
+<body>
+{% for project in projects %}
+    {{ project.name }}
+    <br>
+    {{ project.description }}
+{% endfor %}
+</body>
+</html>
