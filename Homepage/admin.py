@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from Homepage.models import Resume, Resource, Project, Course, Idea
+
+admin.site.register([
+    Resume, Resource, Project, Course, Idea
+])
