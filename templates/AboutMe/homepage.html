@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Yotam Alon's Homepage (In Construction)</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block title %}Welcome to my Homepage!{% endblock %}
+{% block page_title %}Yotam Alon's Homepage{% endblock %}
+{% block content %}
+    {% include 'AboutMe/_homepage.html' %}
+{% endblock %}

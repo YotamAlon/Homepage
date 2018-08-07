@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>My Resume</title>
-</head>
-<body>
-{{ resume }}
-</body>
-</html>
+{% extends 'layout.html' %}
+{% block title %}My Resume{% endblock %}
+{% block page_title %}Yotam Alon's Resume{% endblock %}
+{% block content %}
+    {% include 'AboutMe/_resume.html' %}
+{% endblock %}

@@ -2,18 +2,24 @@ from django.shortcuts import render_to_response
 
 
 def index(request):
-    return render_to_response('AboutMe/homepage.html')
+    is_ajax = request.is_ajax()
+    template = 'AboutMe/' + ('_' if is_ajax else '') + 'homepage.html'
+    return render_to_response(template)
 
 
 def resume(request):
+    is_ajax = request.is_ajax()
     from AboutMe.models import Resume
     resume = Resume.objects.all().first()
-    return render_to_response('AboutMe/resume.html', {'resume': resume})
+    template = 'AboutMe/' + ('_' if is_ajax else '') + 'resume.html'
+    return render_to_response(template, {'resume': resume})
 
 
 def projects(request):
+    is_ajax = request.is_ajax()
     from AboutMe.models import Project
     projects = Project.object.all()
-    return render_to_response('AboutMe/projects.html', {'projects': projects})
+    template = 'AboutMe/' + ('_' if is_ajax else '') + 'projects.html'
+    return render_to_response(template, {'projects': projects})
 
 
