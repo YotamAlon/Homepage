@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from . import views
+from AboutMe import views
 
 urlpatterns = [
     url('^resume/$', views.resume),
