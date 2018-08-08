@@ -1,7 +1,7 @@
 from django.shortcuts import render_to_response
 
 
-def index(request):
+def homepage(request):
     is_ajax = request.is_ajax()
     template = 'AboutMe/' + ('_' if is_ajax else '') + 'homepage.html'
     return render_to_response(template)

@@ -12,13 +12,24 @@
     <h1>{% block page_title %}{% endblock %}</h1>
 </div>
 <div class="sidebar">
-
+<ul>
+    <li onclick="change_partial('main-content', {% url 'AboutMe:homepage' %})">Homepage</li>
+    <li onclick="change_partial('main-content', {% url 'AboutMe:resume' %})">Resume</li>
+    <li onclick="change_partial('main-content', {% url 'AboutMe:projects' %})">Projects</li>
+</ul>
 </div>
-<div class="main-content">
+<div id="main-content" class="main-content">
     {% block content %}{% endblock %}
 </div>
 <div class="footer">
 
 </div>
+<script>
+    function change_partial(el_id, url) {
+        $.ajax(url).done(function (data) {
+            $('#' + el_id).html(data)
+        })
+    }
+</script>
 </body>
 </html>
