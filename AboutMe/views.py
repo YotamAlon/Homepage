@@ -18,8 +18,6 @@ def resume(request):
 def projects(request):
     is_ajax = request.is_ajax()
     from AboutMe.models import Project
-    projects = Project.object.all()
+    projects = Project.objects.all()
     template = 'AboutMe/' + ('_' if is_ajax else '') + 'projects.html'
     return render_to_response(template, {'projects': projects})
-
-

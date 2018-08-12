@@ -13,9 +13,9 @@
 </div>
 <div class="sidebar">
 <ul>
-    <li onclick="change_partial('main-content', {% url 'AboutMe:homepage' %})">Homepage</li>
-    <li onclick="change_partial('main-content', {% url 'AboutMe:resume' %})">Resume</li>
-    <li onclick="change_partial('main-content', {% url 'AboutMe:projects' %})">Projects</li>
+    <li class="partial--changer" data-container-id="main-content" data-url="{% url 'AboutMe:homepage' %}">Homepage</li>
+    <li class="partial--changer" data-container-id="main-content" data-url="{% url 'AboutMe:resume' %}">Resume</li>
+    <li class="partial--changer" data-container-id="main-content" data-url="{% url 'AboutMe:projects' %}">Projects</li>
 </ul>
 </div>
 <div id="main-content" class="main-content">
@@ -25,9 +25,18 @@
 
 </div>
 <script>
+    $(document).ready(function () {
+        $(document).on('click', '.partial--changer', function () {
+            let partial_container = $(this).data('container-id');
+            let url = $(this).data('url');
+            change_partial(partial_container, url);
+        })
+    });
+
     function change_partial(el_id, url) {
         $.ajax(url).done(function (data) {
-            $('#' + el_id).html(data)
+            $('#' + el_id).html(data);
+            window.history.pushState({'html': data}, '', url);
         })
     }
 </script>
